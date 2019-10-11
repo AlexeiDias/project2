@@ -25,6 +25,10 @@ module.exports = function (sequelize, DataTypes) {
                 allowNull: false
             }
         });
+
+        Artwork.hasMany(models.Comment, {
+            onDelete: "cascade"
+        });
     };
 
     return Artwork;
