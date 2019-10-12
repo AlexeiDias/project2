@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Getting jQuery references to the artwork title, image, form, and artist select
     var titleInput = $("#title");
     var imageInput = $("#image");
-    var genreInput = $("#genre");
+    var genreSelect = $("#genre");
     var createForm = $("#create");
     var artistSelect = $("#artist");
     // Adding an event listener for when the form is submitted
@@ -32,7 +32,7 @@ $(document).ready(function () {
     function handleFormSubmit(event) {
         event.preventDefault();
         // Wont submit the artwork if we are missing a title, image, or artist
-        if (!imageInput.val().trim() || !titleInput.val().trim() || !artistSelect.val() || !genreInput.val().trim() ) {
+        if (!imageInput.val().trim() || !titleInput.val().trim() || !artistSelect.val() || !genreSelect.val() ) {
             return;
         }
         // Constructing a newartwork object to hand to the database
@@ -43,9 +43,7 @@ $(document).ready(function () {
             title: titleInput
                 .val()
                 .trim(),
-            genre: genreInput
-                .val()
-                .trim(),
+            genre: genreSelect.val(),
             artistId: artistSelect.val()
         };
 
