@@ -21,7 +21,7 @@ module.exports = function(app) {
     // Here we add an "include" property to our options in our findAll query
     // We set the value to an array of the models we want to include in a left outer join
     // In this case, just db.Author
-    db.Artwork.findAll({
+    db.Comment.findAll({
       where: query,
       include: [db.Artwork]
     }).then(function(dbComment) {
@@ -46,32 +46,32 @@ module.exports = function(app) {
 
   // POST route for saving a new comment
   app.post("/api/comment", function(req, res) {
-    db.Artwork.create(req.body).then(function(dbArtwork) {
-      res.json(dbArtwork);
+    db.Comment.create(req.body).then(function(dbComment) {
+      res.json(dbComment);
     });
   });
 
   // DELETE route for deleting comment
   app.delete("/api/comment/:id", function(req, res) {
-    db.Artwork.destroy({
+    db.Comment.destroy({
       where: {
         id: req.params.id
       }
-    }).then(function(dbArtwork) {
-      res.json(dbArtwork);
+    }).then(function(dbComment) {
+      res.json(dbComment);
     });
   });
 
   // PUT route for updating comment
   app.put("/api/comment", function(req, res) {
-    db.Artwork.update(
+    db.Comment.update(
       req.body,
       {
         where: {
           id: req.body.id
         }
-      }).then(function(dbArtwork) {
-      res.json(dbArtwork);
+      }).then(function(dbComment) {
+      res.json(dbComment);
     });
   });
 };
