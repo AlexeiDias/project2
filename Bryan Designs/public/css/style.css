@@ -1,6 +1,6 @@
 body {
   font-family: 'Cinzel', serif;
-  background-image: url('https://www.publicdomainpictures.net/pictures/200000/nahled/concrete-wall-background.jpg')
+  background-image: url('https://i.pinimg.com/originals/b2/a2/48/b2a2482edeebd13053c788ceee62f695.jpg')
 }
 
 .sidebar {
@@ -62,8 +62,70 @@ body {
   .sidebar a {font-size: 18px;}
 }
 
-#btn1{
-  position: relative;
-  
+/* Gallery */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body, html{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+img{
+  width: 100%;
+  transition-duration: .15s;
+  max-width: 100%;
+  display:block;
+  overflow:hidden;
+}
+.title{
+  position:absolute;
+  display:block;
+  cursor:pointer;
+  top: 35%;
+  display: none;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.6em;
+  text-shadow: 1px 5px 10px black;
+  transition-duration: .3s;
+}
+.text{
+  position:absolute;
+  top: 70%;
+  cursor:pointer;
+  max-width: 80%;
+  text-align:center;
+  left: 50%;
+  text-shadow: 1px 5px 10px black;
+  font-size: 1em;
+  display:none;
+  margin-right: -50%;
+  transition-duration: .3s;
+  transform: translate(-50%, -50%) 
+}
+.container:hover img{
+  transform: scale(1.2);
+  transition-duration: .3s;
+  filter: grayscale(50%);
+  opacity: .7;
+}
+.container:hover span{
+  color:white;
+  display: block;
+  transition-duration: .3s;
+}
+@media only screen and (max-width: 900px) {
+    .container {
+        width: calc(50% - 6px);
+    }
+}
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
 }
 

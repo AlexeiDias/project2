@@ -17,29 +17,31 @@
 <body>
 
     <!-- Nav Bar/ Side Bar Menu -->
-    <div id="mySidebar" class="sidebar" style="text-align: center;">
+    <div id="mySidebar" class="sidebar" style="text-align: center; opacity: 0.8">
         <a href="javascript:void(0)" style="border-radius: 20px" class="closebtn" onclick="closeNav()">←</a>
         <br><br><br><br>
         <ul>
             <li><a href="index.html">Home</a></li>
             <br><br><br><br>
-            <li><a href="location.html">Location</a></li>
+            <li><a href="location1.html">Street Art</a></li>
             <br><br><br><br>
-            <li><a href="information.html">Artist</a></li>
+            <li><a href="location2.html">Tattoo Designs</a></li>
             <br><br><br><br>
-            <li><a href="#">Art Work</a></li>
+            <li><a href="location3.html">Photography</a></li>
+            <br><br><br><br>
+            <li><a href="location4.html">Paintings</a></li>
             <br><br><br><br>
         </ul>
 
-        <div class="dropdown">
+        <div class="dropdown" style="position: fixed;">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Create
+                Post Your Talent
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: black;">
-                <a class="dropdown-item" href="#" style="font-size: 15px">Create Artist</a>
-                <hr class="my-4">
-                <a class="dropdown-item" href="#" style="font-size: 15px">Create Artwork</a>
+            <div class="dropdown-menu" aria-lablledby="dropdownMenuButton">
+                <a class="dropdown-item" href="createArtist.html">Create Artist</a>
+                <a class="dropdown-item" href="createArtwork.html">Create Artwork</a>
+
             </div>
         </div>
     </div>
@@ -55,65 +57,183 @@
     </header>> -->
     <!-- SlideShow Carousel -->
 
-    <div class="container" style="opacity: 0.8; position: relative; bottom: 30px">
+  <header style="text-align: center; color: whitesmoke; opacity: 0.7;">
+    <h1 style="font-size: 90px;">Hidden Talents</h1>
+  </header>
 
-        <header class='text-center'>
-            <img src="./public/images/Title.png" alt='title'>
-        </header>
-        <br>
+        <!-- First Row -->
         <div class="row">
-            <div class="col-md-12">
-                <div id="carouselExampleControls" class="carousel slide rounded" data-ride="carousel">
-                    <div class="carousel-inner" style="border-radius: 20px;">
-                        <div class="carousel-item active">
-                            <img src="https://images.unsplash.com/photo-1477336229416-9d67406e73bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                                style="height: 700px; width: 500px;" class="d-block w-100 shadow-lg p-3 mb-5 bg-dark"
-                                style="border-radius: 20px;" alt="graffiti">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1515584292151-a8ce75f68eff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
-                                style="height: 700px; width: 500px;" class="d-block w-100 shadow-lg p-3 mb-5 bg-dark"
-                                style="border-radius: 20px;" alt="graffiti">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1503411148546-b57247460b64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80"
-                                style="height: 700px; width: 500px;" class="d-block w-100 shadow-lg p-3 mb-5 bg-dark"
-                                style="border-radius: 20px;" alt="graffiti">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1473225071450-1f1462d5aa92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80"
-                                style="height: 700px; width: 500px;" class="d-block w-100 shadow-lg p-3 mb-5 bg-dark"
-                                style="border-radius: 20px;" alt="graffiti">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://images.unsplash.com/reserve/unsplash_52c36f0e157de_1.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                                style="height: 700px; width: 500px;" class="d-block w-100 shadow-lg p-3 mb-5 bg-dark"
-                                style="border-radius: 20px;" alt="graffiti">
-                        </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="opacity: 0.8">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1477336229416-9d67406e73bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location1.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Street Art</h5>
+                        </div></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1543069752-7148d755b347?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location1.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Street Art</h5>
+                        </div></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1503411148546-b57247460b64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location1.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Street Art</h5>
+                        </div></a>
+                      </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
                     </a>
-                </div>
-
+                  </div>
             </div>
+            <div class="col-md-5">
+                <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel" style="opacity: 0.8">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleControls1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls1" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleControls1" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1500483808507-66d90ee151b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location2.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Tattoo Designs</h5>
+                        </div></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location2.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Tattoo Designs</h5>
+                        </div></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.unsplash.com/reserve/Ceszw9OoQD6rwMhfDl9R_render0006.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location2.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Tattoo Designs</h5>
+                        </div></a>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            <div class="col-md-1"></div>
+            
         </div>
-    </div>
-
-
-    <!-- Button To Go To Location -->
-    <div style="text-align: center;">
-        <a href="location.html">
-        <button type="button" id="btn1"
-            style="color: whitesmoke; font-size: 20px; border-radius: 10px; opacity: 0.6; position: relative; bottom: 50px; "
-            class="btn btn-outline-dark bg-dark">Click To Start Browsing</button>
-        </a>
-    </div>
+        <!-- Second Row -->
+        <br>
+        <div class="row">
+                <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" style="opacity: 0.8">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleControls2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls2" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleControls2" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1534455700361-eca9c3dbc981?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location3.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Photography</h5>
+                        </div></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1567891066737-ade1b77815d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location3.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Photography</h5>
+                        </div></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1559750008-4123eec0e352?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location3.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Photography</h5>
+                        </div></a>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            <div class="col-md-5">
+                <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel" style="opacity: 0.8">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleControls3" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls3" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleControls3" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1532479255663-1ded0438a701?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1305&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location4.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Paintings</h5>
+                        </div></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1551732998-9573f695fdbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" style="height: 450px; width: 450px" class="d-block w-100" alt="...">
+                        <a href="location4.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Paintings</h5>
+                        </div></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1552355757-f3e12728818f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1379&q=80" style="height: 450px; width: 400px" class="d-block w-100" alt="...">
+                        <a href="location4.html">
+                        <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                          <h5>Paintings</h5>
+                        </div></a>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+   
 
 
 
