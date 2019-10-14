@@ -6,23 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel='stylesheet' href='./public/css/style.css'>
-    <link rel='stylesheet' href='./public/css/turnjs.css'>
     <script type='text/javascript' src='./public/javascript/app.js'></script>
-    <script type='text/javascript' src='./public/javascript/hash.js'></script>
-    <script type='text/javascript' src='./public/javascript/jquery-ui-1.8.20.custom.min.js'></script>
-    <script type='text/javascript' src='./public/javascript/jquery.min.1.7.js'></script>
-    <script type='text/javascript' src='./public/javascript/jquery.mousewheel.min.js'></script>
-    <script type='text/javascript' src='./public/javascript/modernizr.2.5.3.min.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>FreeLancing</title>
-
 </head>
 
-<body
-    style="background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
+<body style="background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'); background-size: cover;">
 
     <!-- Nav Bar/ Side Bar Menu -->
     <div id="mySidebar" class="sidebar" style="text-align: center; opacity: 0.8">
@@ -41,7 +33,7 @@
             <br><br><br><br>
         </ul>
 
-        <div class="dropdown">
+        <div class="dropdown" style="position: fixed;">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Post Your Talent
@@ -49,21 +41,76 @@
             <div class="dropdown-menu" aria-lablledby="dropdownMenuButton">
                 <a class="dropdown-item" href="createArtist.html">Post Talent</a>
             </div>
+            
         </div>
     </div>
     <!-- Button To Open Menu -->
     <div id="main">
         <button class="openbtn" onclick="openNav()">☰</button>
     </div>
-    <!-- Title -->
 
-    <div class="container text-center">
-        <header>
-            <h1>Artist</h1>
-        </header>
+  <header style="text-align: center; color: whitesmoke; opacity: 0.7;">
+    <h1 style="font-size: 90px;">Regions</h1>
+  </header>
 
-        
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="cardholder">
+          <div class="card">
+            <img src="https://webdevtrick.com/wp-content/uploads/image-slider1.jpg" class="image"/>
+            <a href="gallery.html">
+                <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                <h5>Northern California</h5>
+              </div></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3">
+        <div class="cardholder">
+          <div class="card">
+             <img src="https://webdevtrick.com/wp-content/uploads/image-slider2.jpg" class="image"/>
+             <a href="gallery.html">
+                <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                <h5>Southern California</h5>
+              </div></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3">
+        <div class="cardholder">
+          <div class="card">
+            <img src="https://webdevtrick.com/wp-content/uploads/image-slider3.jpg" class="image"/>
+            <a href="gallery.html">
+                <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                <h5>Chicago</h5>
+              </div></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-3">
+        <div class="cardholder">
+          <div class="card">
+            <img src="https://webdevtrick.com/wp-content/uploads/image-slider4.jpg" class="image"/>
+            <a href="gallery.html">
+                <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6">
+                <h5>New York</h5>
+              </div></a>
+          </div>
+        </div>
+      </div>
+      
+      
     </div>
+  </div>
+
+     
+      
+
+
 
 
 

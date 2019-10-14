@@ -47,9 +47,7 @@
                 Post Your Talent
             </button>
             <div class="dropdown-menu" aria-lablledby="dropdownMenuButton">
-                <a class="dropdown-item" href="createArtist.html">Create Artist</a>
-                <a class="dropdown-item" href="createArtwork.html">Create Artwork</a>
-
+                <a class="dropdown-item" href="createArtist.html">Post Talent</a>
             </div>
         </div>
     </div>
@@ -66,10 +64,10 @@
                     <form id="create">
                         <div class="form-group">
                             <label for="name">Name:</label>
-                            <input placeholder="John Smith" type="text" class="form-control" id="name">
+                            <input placeholder="John Smith" type="text" class="form-control" id="name" required>
                             <br />
                             <label for="picture">Picture:</label>
-                            <input placeholder="Enter a url to a picture of yourself here." type="text" class="form-control" id="picture">
+                            <input placeholder="Enter a url to a picture of yourself here." type="text" class="form-control" id="picture" required>
                             <div class="form-group">
                                 <label for="location">Select Location:</label>
                                 <select class="custom-select" id="location">
@@ -83,7 +81,42 @@
             </div>
         </div>
 
-      
+        <div class="container hidden">
+            <h1 style="text-align:center;">Create Artwork</h1>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form id="cms">
+                        <div class="form-group">
+                            <label for="title">Title:</label>
+                            <input placeholder="Glassy Sky" type="text" class="form-control" id="title" required>
+                            <br />
+                            <label for="image">Image:</label>
+                            <input placeholder="Enter a url to your artwork." type="text" class="form-control"
+                                id="image" required>
+                            <div class="form-group">
+                                <label for="artist">Select the Artist:</label>
+                                <select class="custom-select" id="artist">
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="genre">Select the Genre:</label>
+                                <select class="custom-select" id="genre">
+                                    <option value="graffiti">Graffiti</option>
+                                    <option value="tattoos">Tattoos</option>
+                                    <option value="photography">Photography</option>
+                                    <option value="drawing">Drawing</option>
+                                    <option value="painting">Painting</option>
+                                    <option value="misc">Misc</option>
+                                </select>
+                            </div>
+                            <br />
+                            <button type="submit" class="btn btn-success submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
 
 
 
