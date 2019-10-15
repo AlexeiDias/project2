@@ -1,0 +1,50 @@
+button.submit {
+  float: right;
+  border-radius: 40px;
+}
+
+form#cms {
+  margin-top: 50px;
+}
+
+#cms textarea {
+  resize: none;
+}
+
+.card-header button.delete,
+button.edit {
+  float: right;
+  margin: 5px;
+}
+
+.artist-container {
+  margin-top: 50px;
+  
+}
+
+.artist-list {
+  margin-top: 25px;
+  
+}
+
+.gallery-container {
+  margin-top: 30px;
+}
+
+.gallery {
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+#artist-name {
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+}
+
+.top-30 {
+  margin-top: 30px;
+}
