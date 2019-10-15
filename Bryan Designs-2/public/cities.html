@@ -3,112 +3,127 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel='stylesheet' href='./css/style.css'>
-    <script type='text/javascript' src='./js/app.js'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>FreeLancing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel='stylesheet' href='./css/style.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>FreeLancing</title>
 </head>
 
-<body style="background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'); background-size: cover;">
+<body
+  style="background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'); background-size: cover;">
 
-    <!-- Nav Bar/ Side Bar Menu -->
-    <div id="mySidebar" class="sidebar" style="text-align: center; opacity: 0.8">
-        <a href="javascript:void(0)" style="border-radius: 20px" class="closebtn" onclick="closeNav()">←</a>
-        <br><br><br><br>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <br><br><br><br>
-            <li><a href="location1.html">Street Art</a></li>
-            <br><br><br><br>
-            <li><a href="location2.html">Tattoo Designs</a></li>
-            <br><br><br><br>
-            <li><a href="location3.html">Photography</a></li>
-            <br><br><br><br>
-            <li><a href="location4.html">Paintings</a></li>
-            <br><br><br><br>
-        </ul>
+  <!-- Nav Bar/ Side Bar Menu -->
+  <div id="mySidebar" class="sidebar" style="text-align: center; opacity: 0.8">
+    <a href="javascript:void(0)" style="border-radius: 20px" class="closebtn" onclick="closeNav()">←</a>
+    <br><br><br><br>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <br><br><br><br>
+      <li><a href="location1.html">Street Art</a></li>
+      <br><br><br><br>
+      <li><a href="location2.html">Tattoo Designs</a></li>
+      <br><br><br><br>
+      <li><a href="location3.html">Photography</a></li>
+      <br><br><br><br>
+      <li><a href="location4.html">Paintings</a></li>
+      <br><br><br><br>
+    </ul>
 
-        <div class="dropdown" style="position: fixed;">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Post Your Talent
-            </button>
-            <div class="dropdown-menu" aria-lablledby="dropdownMenuButton">
-                <a class="dropdown-item" href="/artist-manager">Post Talent</a>
-            </div>
-            
-        </div>
+    <div class="dropdown" style="position: fixed;">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Post Your Talent
+      </button>
+      <div class="dropdown-menu" aria-lablledby="dropdownMenuButton">
+        <a class="dropdown-item" href="/artist-manager">Post Talent</a>
+      </div>
+
     </div>
-    <!-- Button To Open Menu -->
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">☰</button>
-    </div>
+  </div>
+  <!-- Button To Open Menu -->
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>
+  </div>
 
   <header style="text-align: center; color: whitesmoke; opacity: 0.7;">
     <h1 style="font-size: 90px;">Select Your City</h1>
   </header>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-3">
+    <div id="cities" class="row">
+
+      <!-- <div class="col-md-3">
         <div class="cardholder">
           <div class="card" style="border-radius: 20px;">
-            <img src="https://images.unsplash.com/photo-1558228733-3469328d1fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="image"/>
+            <img
+              src="https://images.unsplash.com/photo-1558228733-3469328d1fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              class="image" />
             <a href="gallery.html">
-                <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6; border-radius: 10px;">
+              <div class="carousel-caption d-none d-md-block"
+                style="background: black; opacity: 0.6; border-radius: 10px;">
                 <h5>San Francisco</h5>
-              </div></a>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      
+
       <div class="col-md-3">
         <div class="cardholder">
           <div class="card" style="border-radius: 20px;">
-             <img src="https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" class="image"/>
-             <a href="gallery.html">
-                <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6; border-radius: 10px;">
-                <h5>San Jose</h5>
-              </div></a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-3">
-        <div class="cardholder">
-          <div class="card" style="border-radius: 20px;">
-            <img src="https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="image"/>
+            <img
+              src="https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+              class="image" />
             <a href="gallery.html">
-                <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6; border-radius: 10px;">
+              <div class="carousel-caption d-none d-md-block"
+                style="background: black; opacity: 0.6; border-radius: 10px;">
                 <h5>Los Angeles</h5>
-              </div></a>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      
+
       <div class="col-md-3">
         <div class="cardholder">
           <div class="card" style="border-radius: 20px;">
-            <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" class="image"/>
+            <img
+              src="https://images.unsplash.com/photo-1524168272322-bf73616d9cb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              class="image" />
             <a href="gallery.html">
-                <div class="carousel-caption d-none d-md-block" style="background: black; opacity: 0.6; border-radius: 10px;">
-                <h5>Sacramento</h5>
-              </div></a>
+              <div class="carousel-caption d-none d-md-block"
+                style="background: black; opacity: 0.6; border-radius: 10px;">
+                <h5>San Jose</h5>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-      
-      
+
+      <div class="col-md-3">
+        <div class="cardholder">
+          <div class="card" style="border-radius: 20px;">
+            <img
+              src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              class="image" />
+            <a href="gallery.html">
+              <div class="carousel-caption d-none d-md-block"
+                style="background: black; opacity: 0.6; border-radius: 10px;">
+                <h5>Sacramento</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div> -->
+
+
     </div>
   </div>
 
-     
-      
 
 
 
@@ -119,17 +134,20 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type='text/javascript' src='./js/app.js'></script>
+  <script type='text/javascript' src='./js/city.js'></script>
 </body>
 
 </html>
