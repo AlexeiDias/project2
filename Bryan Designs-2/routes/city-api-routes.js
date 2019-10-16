@@ -7,7 +7,7 @@ module.exports = function(app) {
       res.json(dbCity);
     });
   });
-  
+
   app.get("/api/city/:id", function(req, res) {
     db.City.findOne({
       where: {
@@ -18,4 +18,15 @@ module.exports = function(app) {
       res.json(dbCity);
     });
   });
+
+  app.get("/api/city/:id/artwork", function(req, res) {
+    db.Artwork.findAll({
+      where: {
+      CityId: req.params.id
+      }
+    }).then(function(dbArtwork) {
+      res.json(dbArtwork);
+    });
+  });
+  
 };
