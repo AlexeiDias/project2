@@ -7,8 +7,8 @@ module.exports = function(app) {
     // In this case, just db.Post
     db.Artist.findAll({
       include: [db.Artwork]
-    }).then(function(dbArtist) {
-      res.json(dbArtist);
+    }).then(function(dbArtwork) {
+      res.json(dbArtwork);
     });
   });
 
@@ -21,8 +21,8 @@ module.exports = function(app) {
         id: req.params.id
       },
       include: [db.Artwork]
-    }).then(function(dbArtist) {
-      res.json(dbArtist);
+    }).then(function(dbArtwork) {
+      res.json(dbArtwork);
     });
   });
 

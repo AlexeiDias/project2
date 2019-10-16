@@ -23,7 +23,13 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
-require("./routes/api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
+require("./routes/artwork-api-routes.js")(app);
+require("./routes/artist-api-routes.js")(app);
+require("./routes/location-api-routes.js")(app);
+require("./routes/region-api-routes.js")(app);
+require("./routes/comment-api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
 
@@ -34,10 +40,11 @@ require("./routes/html-routes.js")(app);
 // =============================================================
 
 
-
+console.log("sdjfhads");
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.sequelize.sync({ force: true }).then(function () {
+db.sequelize.sync({ force: false }).then(function () {
+    console.log("test");
     app.listen(PORT, function () {
         console.log("App listening on PORT " + PORT);
     });

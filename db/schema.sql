@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS "localartDB";
-CREATE DATABASE "localartDB";
+DROP DATABASE IF EXISTS localartDB;
+CREATE DATABASE localartDB;
 
-USE DATABASE "localartDB";
+USE DATABASE localartDB;
 
 -- Schema for dummy data, app will use sequelize to create tables--
 
