@@ -9,27 +9,33 @@ module.exports = function (sequelize, DataTypes) {
         },
         genre: {
             type: DataTypes.STRING,
-            defaultValue: "Misc"
+            allowNull: false
         },
         image: {
             type: DataTypes.STRING,
             allowNull: false
         }
     });
-
     Artwork.associate = function (models) {
-        // We're saying that an Artwork should belong to an Artist
-        // An Artwork can't be created without an Artist due to the foreign key constraint
         Artwork.belongsTo(models.Artist, {
             foreignKey: {
                 allowNull: false
             }
         });
-
-        Artwork.hasMany(models.Comment, {
-            onDelete: "cascade"
+        Artwork.belongsTo(models.City, {
+            foreignKey: {
+                allowNull: false
+            }
         });
-    };
 
+    
+        // Artwork.hasMany(models.Comment, {
+        //     onDelete: "cascade"
+        // });
+    };
     return Artwork;
 };
+
+
+
+
