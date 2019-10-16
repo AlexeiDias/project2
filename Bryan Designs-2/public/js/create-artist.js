@@ -16,8 +16,8 @@ $(document).ready(function(){
   });
 
   artistForm.on("submit", function(event){
-    event.preventdDefault();
-
+    event.preventDefault();
+    console.log("submitted");
     if(!nameInput.val().trim()) {
       return;
     }
@@ -27,9 +27,9 @@ $(document).ready(function(){
       CityId: citySelect.val()
     };
 
-    $.post("/api/artists", newArtist, function(data){
+    $.post("/api/artists", newArtist).then(function(data){
       console.log(data);
-    })
+    });
 
   })
 })
