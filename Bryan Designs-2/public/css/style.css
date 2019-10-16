@@ -108,7 +108,7 @@ img{
   transition-duration: .3s;
   transform: translate(-50%, -50%) 
 }
-.container:hover img{
+/* .container:hover img{
   transform: scale(1.2);
   transition-duration: .3s;
   filter: grayscale(50%);
@@ -118,7 +118,7 @@ img{
   color:white;
   display: block;
   transition-duration: .3s;
-}
+} */
 @media only screen and (max-width: 900px) {
     .container {
         width: calc(50% - 6px);
@@ -183,4 +183,10 @@ p.desc {
   top: 10px;
   padding: 10px;
   
+}
+
+.art {
+  height: auto;
+  width: 200px;
+  margin: 10px;
 }
