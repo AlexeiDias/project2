@@ -1,3 +1,5 @@
+
+
 $.get("/api/city", function(data) {
 
 console.log(data);
@@ -31,3 +33,4 @@ console.log(data);
         $("#cities").append(citySection);
     }
 })
+
