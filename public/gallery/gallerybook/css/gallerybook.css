@@ -1,5 +1,6 @@
 body{
-	background-image: url('https://i.pinimg.com/originals/b2/a2/48/b2a2482edeebd13053c788ceee62f695.jpg');
+	background-image: url('https://images.unsplash.com/photo-1492574653778-0d770e661ed0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+	background-size: cover;
 	overflow:hidden;
 	margin:0;
 	padding:0;
@@ -12,7 +13,7 @@ body{
 	width:1200px;
 	height:800px;
 	margin:auto;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 .magazine-viewport .magazine{
