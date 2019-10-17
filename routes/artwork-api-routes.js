@@ -3,7 +3,6 @@ module.exports = function(app) {
 
   app.get("/api/artwork", function(req, res) {
     db.Artwork.findAll({
-      include: [db.Comment]
     }).then(function(dbArtwork) {
       res.json(dbArtwork);
     });

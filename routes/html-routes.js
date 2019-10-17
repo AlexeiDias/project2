@@ -28,6 +28,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/cities.html"));
   });
 
+  app.get("/city-maker", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/city-maker.html"));
+  });
+
 
 
 

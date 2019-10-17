@@ -1,6 +1,6 @@
 body {
   font-family: 'Cinzel', serif;
-  background-image: url('https://i.pinimg.com/originals/b2/a2/48/b2a2482edeebd13053c788ceee62f695.jpg')
+  background-image: url('https://images.unsplash.com/photo-1517776832751-0a7e6993de03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')
 }
 
 .sidebar {
@@ -70,11 +70,6 @@ body, html{
   font-family: 'Poppins', sans-serif;
 }
 
-h3 {
-  color: white;
-  font-size: 32px;
-}
-
 .artwork {
   height: auto;
   width: 100%;
@@ -85,7 +80,6 @@ img{
   max-width: 100%;
   display:block;
   overflow:hidden;
-  border-radius: 40px;
 }
 .title{
   position:absolute;
@@ -115,17 +109,7 @@ img{
   transition-duration: .3s;
   transform: translate(-50%, -50%) 
 }
-/* .container:hover img{
-  transform: scale(1.2);
-  transition-duration: .3s;
-  filter: grayscale(50%);
-  opacity: .7;
-}
-.container:hover span{
-  color:white;
-  display: block;
-  transition-duration: .3s;
-} */
+
 @media only screen and (max-width: 900px) {
     .container {
         width: calc(50% - 6px);
@@ -150,7 +134,6 @@ h1 {
 }
 .image {
   height: 300px;
-  border-radius: 20px;
 }
 
 .carousel-caption{
@@ -161,7 +144,6 @@ h1 {
 .cardholder {
   margin-top: 150px;
   perspective: 600px;
-  
 }
 .card {
   width: 300px;
@@ -171,7 +153,6 @@ h1 {
   box-shadow: -6px 5px 13px 2px rgba(0, 0, 0, 0.25);
 	transition: all 1s ease;
   color: transparent;
-  border-radius: 20px;
   
 }
 .card:hover {
@@ -196,4 +177,20 @@ p.desc {
   height: auto;
   width: 200px;
   margin: 10px;
+  border-radius: 20px;
+}
+
+.artwork {
+  border-radius: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 48px;
+  margin: 10px;
+  color: white;
+  opacity: 0.8;
 }
