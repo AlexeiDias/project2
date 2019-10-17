@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Artist.associate = function(models) {
-    Artist.hasMany(models.Post, {
+    Artist.hasMany(models.Artwork, {
       onDelete: "cascade"
     });
   };
