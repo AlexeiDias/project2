@@ -70,8 +70,15 @@ body, html{
   font-family: 'Poppins', sans-serif;
 }
 
+h3 {
+  color: white;
+  font-size: 32px;
+}
 
-
+.artwork {
+  height: auto;
+  width: 100%;
+}
 img{
   width: 100%;
   transition-duration: .15s;

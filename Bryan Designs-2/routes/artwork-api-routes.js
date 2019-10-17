@@ -1,6 +1,6 @@
 var db = require("../models");
 module.exports = function(app) {
-    
+
   app.get("/api/artwork", function(req, res) {
     db.Artwork.findAll({
       include: [db.Comment]
@@ -13,8 +13,7 @@ module.exports = function(app) {
     db.Artwork.findOne({
       where: {
         id: req.params.id
-      },
-      include: [db.Comment]
+      }
     }).then(function(dbArtwork) {
       res.json(dbArtwork);
     });
