@@ -7,7 +7,7 @@ $.get("/api/city", function (data) {
     for (var i = 0; i < data.length; i++) {
 
         var citySection = $("<div>");
-        citySection.addClass("col-md-3");
+        citySection.addClass("col-md-3 col-6");
 
         var cardholder = $("<div>");
         cardholder.addClass("cardholder");
@@ -22,7 +22,7 @@ $.get("/api/city", function (data) {
         image.addClass("city");
 
         var caption = $("<div>");
-        caption.addClass("carousel-caption d-none d-md-block");
+        caption.addClass("carousel-caption d-md-block");
         caption.append("<h5>" + data[i].name + "</h5>");
 
         citySection.append(cardholder);
@@ -38,6 +38,7 @@ $.get("/api/city", function (data) {
 
 $(document).on("click", ".city", function () {
 $("#art").empty();
+$("#artwork").empty();
 
 var cityID = $(this).attr("data-id");
 console.log(cityID);
@@ -82,7 +83,7 @@ $(document).on("click", ".art", function () {
 
             var artWorkSection = $("<div>");
             artWorkSection.addClass("col-12");
-            artWorkSection.append("<h3>" + data.title + "</h3>")
+            artWorkSection.append("<h3 style='font-size: 106px'>" + data.title + "</h3>")
 
             var card = $("<div>");
             card.addClass("card3");

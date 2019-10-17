@@ -8,12 +8,16 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         }
-    },
-    {
-        timestamps: false
     });
+
     City.associate = function (models) {
         City.hasMany(models.Artist, {
+            onDelete: "cascade"
+        });
+    };
+
+    City.associate = function (models) {
+        City.hasMany(models.Artwork, {
             onDelete: "cascade"
         });
     };

@@ -12,8 +12,7 @@ module.exports = function(app) {
     db.City.findOne({
       where: {
         id: req.params.id
-      },
-      include: [db.Artist]
+      }
     }).then(function(dbCity) {
       res.json(dbCity);
     });
@@ -26,6 +25,12 @@ module.exports = function(app) {
       }
     }).then(function(dbArtwork) {
       res.json(dbArtwork);
+    });
+  });
+
+  app.post("/api/city", function (req, res) {
+    db.City.create(req.body).then(function (dbCity) {
+      res.json(dbCity);
     });
   });
   
