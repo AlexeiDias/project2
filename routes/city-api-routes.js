@@ -8,15 +8,15 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/api/city/:id", function(req, res) {
-    db.City.findOne({
-      where: {
-        id: req.params.id
-      }
-    }).then(function(dbCity) {
-      res.json(dbCity);
-    });
-  });
+  // app.get("/api/city/:id", function(req, res) {
+  //   db.City.findOne({
+  //     where: {
+  //       id: req.params.id
+  //     }
+  //   }).then(function(dbCity) {
+  //     res.json(dbCity);
+  //   });
+  // });
 
   app.get("/api/city/:id/artwork", function(req, res) {
     db.Artwork.findAll({
