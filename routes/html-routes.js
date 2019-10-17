@@ -12,17 +12,21 @@ module.exports = function(app) {
 
 
   app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/gallery/gallerybook/index.html"));
+  });
+
+  app.get("/cities", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/cities.html"));
   });
 
-  // app.get("/artist-manager", function(req, res) {
-  //   res.sendFile(path.join(__dirname, "../public/artist-manager.html"));
-  // });
+  app.get("/create-artist", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/create-artist.html"));
+  });
 
 
-  // app.get("/cms", function(req, res) {
-  //   res.sendFile(path.join(__dirname, "../public/cms.html"));
-  // });
+  app.get("/add-artwork", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/add-artwork.html"));
+  });
 
   // app.get("/gallery", function(req, res) {
   //   res.sendFile(path.join(__dirname, "../public/gallery.html"));

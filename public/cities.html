@@ -7,26 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel='stylesheet' href='./css/style.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>FreeLancing</title>
 </head>
 
 <body
-  style="background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'); background-size: cover;">
+  style="background-image: url('https://images.unsplash.com/photo-1492574653778-0d770e661ed0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80'); background-size: cover;">
 
   <!-- Nav Bar/ Side Bar Menu -->
   <div id="mySidebar" class="sidebar" style="text-align: center; opacity: 0.8">
     <a href="javascript:void(0)" style="border-radius: 20px" class="closebtn" onclick="closeNav()">←</a>
     <br><br><br><br>
     <ul>
-      <li><a href="cities.html">Home</a></li>
-      <br><br><br><br>
-      <li><a href="create-artist.html">Create Artist</a></li>
-      <br><br><br><br>
-      <li><a href="add-artwork.html">Add Artwork</a></li>
-      <br><br><br><br>
+        <li><a href="/">Home</a></li>
+        <br><br><br><br>
+        <li><a href="/cities">Browse Gallery</a></li>
+        <br><br><br><br>
+        <li><a href="/create-artist">Create Artist</a></li>
+        <br><br><br><br>
+        <li><a href="/add-artwork">Add Artwork</a></li>
+        <br><br><br><br>
     </ul>
 
 
@@ -37,10 +39,13 @@
   </div>
 
   <header style="text-align: center; color: whitesmoke; opacity: 0.7;">
-    <h1 style="font-size: 90px;">Select Your City</h1>
+    <h1 style="font-size: 90px; font-family: 'Pacifico', cursive;" >Hidden Talents</h1>
   </header>
 
+
   <div class="container">
+<br>
+    <h2 class="text-center" style="font-family: 'Pacifico', cursive; font-size: 50px; color: whitesmoke; opacity: 0.9" >Choose Your Location</h2>
 
     <div id="cities" class="row">
 
@@ -91,8 +96,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script type='text/javascript' src='js/app.js'></script>
-  <script type='text/javascript' src='js/city.js'></script>
+  <script type='text/javascript' src='./js/app.js'></script>
+  <script type='text/javascript' src='./js/city.js'></script>
 </body>
 
 </html>

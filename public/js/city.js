@@ -70,36 +70,31 @@ console.log(cityID);
 })
 //appends the single artwork to its div
 
-$(document).on("click", ".art", function () {
-    $("#artwork").empty();
+artWorkSection.on("click", function (event) {
 
-    var artworkID = $(this).attr("data-id");
-    console.log(artworkID);
+    $.get("/api/artwork/:id", function (data) {
 
-    $.get("/api/artwork/" + artworkID, function (data) {
-        console.log("im running");
         console.log(data);
 
+        for (var i = 0; i < data.length; i++) {
+
             var artWorkSection = $("<div>");
-            artWorkSection.addClass("col-12");
-            artWorkSection.append("<h3>" + data.title + "</h3>")
+            artWorkSection.addClass("col-md-3");
 
             var card = $("<div>");
-            card.addClass("card3");
+            card.addClass("card");
 
             var image = $("<img>");
-            image.attr("src", data.image);
-            image.attr("data-id", data.id);
-            image.addClass("artwork");
-
-            var description = $("<div>");
-            description.append("<h3>Genre: " + data.genre + "</h3>")
+            image.attr("src", data[i].image);
+            image.attr("data-id", data[i].id);
+            image.addClass("image");
+            image.addClass("art");
 
             artWorkSection.append(card);
             card.append(image);
-            artWorkSection.append(description);
 
-            $("#artwork").append(artWorkSection);
-       
+            $("#art").append(artWorkSection);
+        }
+
     })
 })

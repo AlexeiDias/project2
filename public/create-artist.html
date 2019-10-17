@@ -6,8 +6,9 @@
 	<title>Create an Artist</title>
 	<!-- Latest compiled and minified CSS & JS -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+	<!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> -->
 	<link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 	<script type='text/javascript' src='./js/app.js'></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -20,11 +21,14 @@
 		<a href="javascript:void(0)" style="border-radius: 20px" class="closebtn" onclick="closeNav()">←</a>
 		<br><br><br><br>
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<br><br><br><br>
-			<li><a href="location1.html">Create Artist</a></li>
-			<br><br><br><br>
-			<li><a href="location2.html">Add Art</a></li>
+				<li><a href="/">Home</a></li>
+				<br><br><br><br>
+				<li><a href="/cities">Browse Gallery</a></li>
+				<br><br><br><br>
+				<li><a href="/create-artist">Create Artist</a></li>
+				<br><br><br><br>
+				<li><a href="/add-artwork">Add Artwork</a></li>
+				<br><br><br><br>
 
 		</ul>
 
@@ -44,20 +48,24 @@
 	</div>
 
 
-	<div class="container">
+	<div class="container" style="background-color:black; border-radius: 40px; position: relative; top: 200px; padding: 30px; opacity: 0.9">
+		<header>
+			<h1 class="text-center" style=" font-family: 'Pacifico', cursive; color: whitesmoke;">Create Artist</h1>
+		</header>
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 				<form id="artistform">
 					<div class="form-group">
-						<label for="artist">Artist</label>
+						<label for="artist" style="color: whitesmoke;">Artist</label>
 						<input placeholder="Artist Name" type="text" class="form-control" id="artist">
+						<br>
 						<div class="form-group">
-							<label for="category">Select City:</label>
+							<label for="category" style="color: whitesmoke;">Select City:</label>
 							<select class="custom-select" id="city">
 							</select>
 						</div>
 						<br />
-						<button type="submit" class="btn btn-dark submit">Submit</button>
+						<button type="submit" class="btn btn-dark submit" style="color: whitesmoke;">Submit</button>
 					</div>
 				</form>
 			</div>

@@ -6,25 +6,29 @@
 	<title>Add Artwork</title>
 	<!-- Latest compiled and minified CSS & JS -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+	<!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> -->
 	<link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 	<script type='text/javascript' src='./js/app.js'></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="background-image: url('https://images.unsplash.com/photo-1517776832751-0a7e6993de03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')">
 
 	<!-- Nav Bar/ Side Bar Menu -->
 	<div id="mySidebar" class="sidebar" style="text-align: center; opacity: 0.8">
 		<a href="javascript:void(0)" style="border-radius: 20px" class="closebtn" onclick="closeNav()">←</a>
 		<br><br><br><br>
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<br><br><br><br>
-			<li><a href="location1.html">Create Artist</a></li>
-			<br><br><br><br>
-			<li><a href="location2.html">Add Art</a></li>
+				<li><a href="/">Home</a></li>
+				<br><br><br><br>
+				<li><a href="/cities">Browse Gallery</a></li>
+				<br><br><br><br>
+				<li><a href="/create-artist">Create Artist</a></li>
+				<br><br><br><br>
+				<li><a href="/add-artwork">Add Artwork</a></li>
+				<br><br><br><br>
 
 		</ul>
 
@@ -44,29 +48,34 @@
 	</div>
 
 
-	<div class="container">
+	<div class="container" style="background-color:black; border-radius: 40px; position: relative; top: 200px; padding: 30px; opacity: 0.9">
+		<h1 class="text-center" style="color: whitesmoke;  font-family: 'Pacifico', cursive;" >Add Artwork</h1>
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 				<form id="artworkform">
 					<div class="form-group">
-						<label for="artwork-title">Artwork-Title</label>
-                        <input placeholder="Title of your artwork goes here." type="text" class="form-control" id="artwork-title">
-                        <label for="artwork-image">Artwork Image URL</label>
+						<label for="artwork-title" style="color: whitesmoke;">Artwork-Title</label>
+						<input placeholder="Title of your artwork goes here." type="text" class="form-control" id="artwork-title">
+						<br>
+                        <label for="artwork-image" style="color: whitesmoke;">Artwork Image URL</label>
 						<input placeholder="Place a url of your art here." type="text" class="form-control" id="artwork-image">
+						<br>
 						<div class="form-group">
-                            <label for="category">Select Artist:</label>
+                            <label for="category" style="color: whitesmoke;">Select Artist:</label>
                             <select class="custom-select" id="artists">
-                            </select>
-							<label for="category">Select City:</label>
+							</select>
+							<br>
+							<label for="category" style="color: whitesmoke;">Select City:</label>
 							<select class="custom-select" id="city">
-                            </select>
-                            <label for="category">Select Genre:</label>
+							</select>
+							<br>
+                            <label for="category" style="color: whitesmoke;">Select Genre:</label>
 							<select class="custom-select" id="genre">
-                                <option value="Graffiti">Graffiti</option>
-                                <option value="Tattoos">Tattoo Work</option>
-                                <option value="Photography">Photography</option>
-                                <option value="Paintings">Paintings</option>
-                                <option value="Misc">Misc.</option>
+                                <option value="graffiti">Graffiti</option>
+                                <option value="tattoos">Tattoo Work</option>
+                                <option value="photography">Photography</option>
+                                <option value="paintings">Paintings</option>
+                                <option value="misc">Misc.</option>
 							</select>
 						</div>
 						<br />
