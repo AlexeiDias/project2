@@ -1,6 +1,6 @@
 # Hidden Talents
 ## Deployed Link:
-[Hiddne Talents](https://polar-meadow-22968.herokuapp.com/)
+[Hidden Talents](https://polar-meadow-22968.herokuapp.com/)
 
 
 ## Description
@@ -16,12 +16,31 @@ Hidden Talents is a web app that easily connects the local art community. Users 
 Users are greeted with a splash page containing some preview images. Clicking that pulls up an interactive page turner that allows you to see several images. Navigating to the sidebar, you can then Go To the Gallery and begin browsing images of artwork based on the locations give. The side bar also has options to add in a new artists and artwork to the gallery. Note adding artwork requires an artist to already be in the database, as well as a URL link to the artworks 
 
 
-## Code snippet
+## Code examples
 ![Turn.JS](https://i.imgur.com/0s1SHX1.png "Turn.JS")
 This snippet shows how the page loads on to the index.html homepage. 
 Every images that is saved from an image folder will append to the html page by using
 
 “img.attr(‘src’, ‘folder route’ + page + ‘name of the picture file’);
+
+### JS client side with Route
+This is one aspect of how the app functions:
+![gif](https://i.imgur.com/Okja4I8.gif)
+
+Here is the corresponding code for that:
+
+Code:
+![code](https://i.imgur.com/VuQyaNF.png)
+
+To code listens for a click on one of the cities (It uses the get route below) and appends the images it gets from there into onto individual cards in the div labeled artSection.
+
+Route:
+![route](https://i.imgur.com/u1SaHTS.png)
+
+This is the get route that queries our data base for artwork and finds all photos assiciated with the cityID of the city clicked.
+
+## Schema Associations
+![gif](https://i.imgur.com/KI8OQiv.jpg)
 
 
 
