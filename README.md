@@ -1,6 +1,6 @@
 # Hidden Talents
 ## Deployed Link:
-[Hiddne Talents](https://polar-meadow-22968.herokuapp.com/)
+[Hidden Talents](https://polar-meadow-22968.herokuapp.com/)
 
 
 ## Description
