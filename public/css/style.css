@@ -3,6 +3,14 @@ body {
   background-image: url('https://images.unsplash.com/photo-1517776832751-0a7e6993de03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80')
 }
 
+#artistDelete {
+  background-color: white;
+}
+
+#artworkDelete {
+  background-color: white;
+}
+
 .sidebar {
   height: 100%;
   width: 0;
