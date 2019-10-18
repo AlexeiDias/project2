@@ -16,7 +16,7 @@ Hidden Talents is a web app that easily connects the local art community. Users 
 Users are greeted with a splash page containing some preview images. Clicking that pulls up an interactive page turner that allows you to see several images. Navigating to the sidebar, you can then Go To the Gallery and begin browsing images of artwork based on the locations give. The side bar also has options to add in a new artists and artwork to the gallery. Note adding artwork requires an artist to already be in the database, as well as a URL link to the artworks 
 
 
-## Code snippet
+## Code examples
 ![Turn.JS](https://i.imgur.com/0s1SHX1.png "Turn.JS")
 This snippet shows how the page loads on to the index.html homepage. 
 
@@ -26,6 +26,25 @@ This snippet shows how the page loads on to the index.html homepage.
 The pages will then get appended to the pageElement which serves as an argument that is held in a parameter that holds the whole functions itself.
 - By using the argument called pageElement from the parameter, it will search for a class called ".loader" which is a web browser loader that parses the URLs and requires the images we want it to look for from our folder routes. By searching for the class, the "find()" method is used to search for that element and it will then be removed by using the "remove()" method.
 The attribute method was used to find the source of where our pages/images are located within out folder routes.
+
+### JS client side with Route
+This is one aspect of how the app functions:
+![gif](https://i.imgur.com/Okja4I8.gif)
+
+Here is the corresponding code for that:
+
+Code:
+![code](https://i.imgur.com/VuQyaNF.png)
+
+To code listens for a click on one of the cities (It uses the get route below) and appends the images it gets from there into onto individual cards in the div labeled artSection.
+
+Route:
+![route](https://i.imgur.com/u1SaHTS.png)
+
+This is the get route that queries our data base for artwork and finds all photos assiciated with the cityID of the city clicked.
+
+## Schema Associations
+![gif](https://i.imgur.com/KI8OQiv.jpg)
 
 
 
