@@ -73,6 +73,8 @@ console.log(cityID);
 
 $(document).on("click", ".art", function () {
 
+    $("#artwork").empty();
+
     var artworkID = $(this).attr("data-id");
     console.log(artworkID);
 
