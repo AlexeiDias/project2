@@ -72,7 +72,6 @@ console.log(cityID);
 //appends the single artwork to its div
 
 $(document).on("click", ".art", function () {
-    $("#artwork").empty();
 
     var artworkID = $(this).attr("data-id");
     console.log(artworkID);
