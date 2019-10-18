@@ -1,14 +1,17 @@
 # Hidden Talents
 ## Deployed Link:
 [Hidden Talents](https://polar-meadow-22968.herokuapp.com/)
-
+------
+## Video Demo
+[![Hidden Talents Demo video](https://i.imgur.com/Rfmisx6.png)](https://vimeo.com/367357621 "Liri Demo video")
+---
 
 ## Description
 Hidden Talents is a web app that easily connects the local art community. Users are able to navigate to a city of their choice and take a look at examples of art in that area. Artwork can be uploaded by the Artists themelseves, alternatively fans of the arts can upload artwork they like and attriubite it to the artist.
 
 
 ## Images of site
-![splash page](https://i.imgur.com/Rfmisx6.png)
+
 ![Main Page](https://i.imgur.com/JDfjKEj.png)
 
 
